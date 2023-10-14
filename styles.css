@@ -1,0 +1,46 @@
+/*  
+ids = #
+classes = .
+
+
+
+
+
+/* possible breakpoints
+    -tablet @ 657
+    -mobile @ 481
+*/ 
+body {
+    background-color: #232326;
+}
+
+.header-main {
+    background-color: #cda580;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    background-color: yellow;
+}
+
+.header-main-logo img{
+    height: 60px;
+}
+
+.header-main-nav{
+    width: 120px;
+    height: 100%;
+    background-color: blue;
+}
+
+.header-main-sm{
+    width: 120px;
+    height: 100%;
+    background-color: red;
+}
+
