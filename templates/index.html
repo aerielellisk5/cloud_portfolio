@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aeriel's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="../reset.css">
-    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/indexstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <nav class="header-main-nav">
             <ul>
                 <li id="home" class="top-link"><a href="#"><i class="fa-solid fa-3x fa-house"></i></a></li>
-                <li id="projects" class="top-link"><a href="#"><i class="fa-solid fa-3x fa-pen-ruler"></i></a></li>
+                <li id="project" class="top-link"><a href="#"><i class="fa-solid fa-3x fa-pen-ruler"></i></a></li>
                 <li id="contact-me" class="top-link"><a href="#"><i class="fa-solid fa-3x fa-address-card"></i></a></li>
             </ul>
         </nav>
@@ -28,21 +28,44 @@
 
     <div id="aboutme">
         <h1 id="hey">Hey! I'm Aeriel</h1>
-        <p id="aboutme-one">But before we get into the things that I do for work, I figure it would be nice to say a few things about myself, outside of work.  Before tech, I was a D1 Tennis Player at The University of Texas at Austin, so tennis is a huge part of my life</p>
-        <p id="aboutme-two">If I'm not playing tennis, you can catch me reading a good book on the couch or watching some TV series; currently enjoying Suits on Netflix and reading the Throne of Glass series</p>
-        <p id="aboutme-three">But a lot of the time, you can find me on my computer, learning something.  Whether its through a Udemy Course or a Youtube series, I really do enjoy learning and understanding new things.</p>
+        <div id="aboutme-one">But before we get into the things that I do for work, I figure it would be nice to say a few things about myself, outside of work.  Before tech, I was a D1 Tennis Player at The University of Texas at Austin, so tennis is a huge part of my life
+            <div class="aboutme-icons">
+                <!-- tennis school -->
+                <i class="fa-solid fa-3x fa-table-tennis-paddle-ball"></i>
+                <i class="fa-solid fa-3x fa-graduation-cap"></i>
+            </div>
+        </div>
+        <div id="aboutme-two">If I'm not playing tennis, you can catch me reading a good book on the couch or watching some TV series; currently enjoying Suits on Netflix and reading the Throne of Glass series
+            <div class="aboutme-icons">
+                <!-- book tv -->
+                <i class="fa-solid fa-3x  fa-book-open"></i>
+                <i class="fa-solid fa-3x fa-tv"></i>
+
+            </div>
+        </div>
+        <div id="aboutme-three">But a lot of the time, you can find me on my computer, learning something.  Whether its through a Udemy Course or a Youtube series, I really do enjoy learning and understanding new things.
+            <div class="aboutme-icons">
+                <!-- computer notebook -->
+                <i class="fa-solid fa-3x fa-laptop"></i>
+                <i class="fa-solid fa-3x fa-note-sticky"></i>
+
+            </div>
+        </div>
         
     </div> 
 
     <div id="intro">
+        <h1>Technical Skills</h1>
         <div id="left" class="oneside flip-card">
             <div class="flip-card-inner">
-                <div class="title front">QA and Test Automation Skills and Experience</div>
+                <div class="title front">Quality Assurance</div>
                 <div class="experience back">
                     <ul>
                         <li>5 and a half years of QA Manual and Test Automation experience</li>
                         <li>Apt in taking UX designs/converstaions and creating robust test plans </li>
                         <li>Experienced in Front-end test Automation using Playright and Selenium (python)</li>
+                        <li>Experienced with API testing utilizing Postman</li>
+                        <li>Experienced with backend testing utilizing PyTest and Python</li>
                     </ul>
                 </div>
             </div>
@@ -60,6 +83,14 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- start of projects -->
+    <div id="links-to-more">
+        <a href="projects.html"><button id="projects" type="submit">Projects</a>
+        </button>
+    </div>
+    
     
 
     

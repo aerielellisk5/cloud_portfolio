@@ -59,6 +59,7 @@ a {
     margin-top: -115px;
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 16px;
+    padding-bottom: 20px;
 }
 
 #hey {
@@ -71,21 +72,25 @@ a {
     margin-right:25px;
     width:fit-content;
     /* padding:0px 25px */
+   
 }
 
 
 /* styling the intro */
 #intro {
-    height: 400px;
+    height: 500px;
     width: 100%;
     display: flex;
+    justify-content: center;
+    text-align: center;
+    
 
 }
 
 .oneside {
     display: inline;
     color:white;
-    width: 300px;
+    width: 350px;
     padding: 5px 10px;
     margin: 10px;
     text-align: center;
@@ -93,17 +98,23 @@ a {
     margin-top:100px;
     font-family: 'Shadows Into Light Two', cursive;
     border: 1px solid #f1f1f1;
-
 }
 
-#right {
-    
-    
+.aboutme-icons{
+    color:#E6C068;
+    text-align: center;
+    padding-top: 20px;
+    transition: font-size ease-out 2s;
 }
 
-#left {
-    
+.aboutme-icons:hover{
+   font-size: 25px;
+}
 
+.fa-laptop, .fa-book-open, .fa-table-tennis-paddle-ball {
+    /* background-color: green; */
+    padding-right: 40px;
+    
 }
 
 /* trying to flip the card */
@@ -119,7 +130,6 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
@@ -141,7 +151,9 @@ a {
 /* Style the front side (fallback if image is missing) */
 .front {
     background-color: #E6C068;
-    color:#232326
+    color:#232326;
+    padding-top: 200px;
+    
 }
 
 /* Style the back side */
@@ -149,8 +161,29 @@ a {
     background-color: #E6C068;
     color:#232326;
     transform: rotateY(180deg);
+    padding-top: 20px;
 }
 
-
-
 /* end of trying to flip the card */
+
+
+#links-to-more{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#projects {
+    background-color: #E6C068;
+    border: none;
+    color: #232326;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 50px
+}
+
