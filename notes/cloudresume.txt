@@ -1,4 +1,0 @@
-~ AWS S3 and AWS CloudFront Notes
-- caches your content/files.  Creates super fast responses
-- if the material isn't cached, it will retrieve it from the origin and then sets it cached in an edge location
-- also leverage the AWS global private network; provides better performance for both static and dynamic content.                                   
