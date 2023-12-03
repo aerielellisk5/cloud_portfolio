@@ -8,54 +8,38 @@
     <link rel="stylesheet" type="text/css" href="../styles/projects.css">
 </head>
 <body>
-    <div id="project-container-1">
-        <div class="top">
-            <div class="top-left">
-                <div class= "image">Cloud Resume</div>
-                <i class="fa-solid fa-10x fa-suitcase"></i>
-                <div class= "description"><p>This project was a large compolation of so many things that I've learned lately.  Whether it was services in AWS, implementing CI/CD pipelines with github actions, or creating and deploying my own website on AWS, this project was a great way to put all the different pieces together</p></div>
+
+    <div class="project">
+        <div class="title_image">
+            <div class="title">
+                <p>Creating Images</p>
             </div>
-            <div class="top-center">
-                <div class="center-top">
-                    <div class="dotted-line-top" ></div>
-                    <div class="dotted-line-top hide"></div>
+            <div class="image">
+            </div>
+        </div>
+
+        <div class="likes">
+            <button id="project_one_likes">
+                <i class="fa-solid fa-10x fa-heart "></i>
+            </button>
+            <div id="project_one_like_count">0</div>
+        </div>
+
+        <div class="comments">
+            <form id="project_one" class="project_comments">
+                <div>
+                    <p></p>
+                    <textarea name="comments"></textarea>
                 </div>
-                <div class="center-bottom">
-                    <div class="dotted-line-bottom hide"></div>
-                    <div class="dotted-line-bottom"></div>
-                </div>
-            </div>
-            <div class="top-right">
-                <div class= "image">Cloud Resume</div>
-                <i class="fa-solid fa-10x fa-suitcase"></i>
-                <div class= "description"><p>This project was a large compolation of so many things that I've learned lately.  Whether it was services in AWS, implementing CI/CD pipelines with github actions, or creating and deploying my own website on AWS, this project was a great way to put all the different pieces together</p></div>
-            </div>
+                <button id="submit_form" type="submit" value="Submit" form="project_comments">Submit</button>
+            </form>
         </div>
     </div>
 
 
 
-
-
-
-
-
-<!-- <div id="links-to-more">
-    <a href="index.html"><button id="projects" type="submit">Home</a>
-    </button>
-</div> -->
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://kit.fontawesome.com/01db06c555.js" crossorigin="anonymous"></script>
+<script src="../script.js" type="text/javascript"></script>
 
 </body>
 </html>

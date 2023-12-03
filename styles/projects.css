@@ -2,102 +2,70 @@
 body {
     background-color: #232326;
 }
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.title_image, .likes, .comments{
+    height: 400px;
+}
 
-#project-container-1{
-    background-color:#232326;
+.title_image {
+    /* background-color: yellow; */
+    width: 30%;
+    padding-top:25px;
+}
+
+.title{
+    /* background-color: aqua; */
+    height: 25%;
     font-family: 'Gloria Hallelujah', cursive;
-    width: 100%;
-    color:white
-}
-
-.top {
-    display: flex;
-    background-color: #232326;
-    width:100%
-}
-.top-left {
-    width:100%;
-    height:400px;
-    margin: 0px;
-}
-
-.top-center{
-    width:100%;
-    height:400px;
-}
-
-.dotted-line-top {
-    border-top-right-radius: 100%;
-    border-style: dotted;
-    border-color: #E6C068;
-    height:200px;
-    margin-top:150px;
-    width:50%;
-    border-bottom: none;
-    border-left: none;
-}
-
-.dotted-line-bottom {
-    /* border-style: dotted;
-    border-color: blue;
-    height:250px;
-    width:50%;  */
-    border-bottom-left-radius: 100%;
-    border-style: dotted;
-    border-color:#E6C068;
-    height:200px;
-    width:50%;
-    border-top: none;
-    border-right: none;
-    margin-left:0.5px
-}
-
-
-.top-right {
-    width:100%;
-    height:400px;
-}
-
-.center-top {
-    width: 100%;
-    display: flex;
-}
-
-.center-bottom {
-    width: 100%;
-    display: flex;
-}
-
-.hide {
-    border: none;
-}
-
-.center-bottom, .center-top{
-    width:100%
-}
-
-
-
-
-
-
-
-
-
-
-
-#projects {
-    background-color: #E6C068;
-    border: none;
-    color: #232326;
-    padding: 15px 32px;
+    font-size: 40px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 50px;
-    margin-top: 30px;
+    padding: 10px;
+    color:#E6C068;
+}
+
+.image {
+    /* background-color: purple; */
+    height:70%;
+}
+
+.likes {
+    /* background-color: green; */
+    width:15%;
+    text-align: center;
+    padding-top: 130px;
+    color:white;
+}
+
+#project_one_like_count{
+    height:20%;
+    width:20%;
+    color:white;
+    background-color:blueviolet;
+    margin-left:40%;
+    padding-top:15px
+}
+
+.comments {
+    /* background-color: red; */
+    width: 50%;
+    padding:100px
+}
+
+textarea {
+    background-color: white;
+    width: 100%;
+    height:200px;
+    border-radius: 5px;
+}
+
+#submit_form {
+    background-color: #E6C068;
+    padding:10px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
