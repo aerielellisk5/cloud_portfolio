@@ -9,3 +9,5 @@ function increaseCount() {
     return project_one_like_count
 }
 
+// checkout the onload for the document
+

@@ -10,10 +10,16 @@ conn = None
 
 def get_db_connection():
     """Connecting to the database"""
-    conn = psycopg2.connect(host='db',
+    # conn = psycopg2.connect(host='db',
+    #                     database='portfolio',
+    #                     user="aerielellis",
+    #                     password="password123",
+    #                     port="5432")
+    
+    conn = psycopg2.connect(host='database-2.cutddukdl6vf.us-east-1.rds.amazonaws.com',
                         database='portfolio',
                         user="aerielellis",
-                        password="password123",
+                        password="password112233",
                         port="5432")
     return conn
 
