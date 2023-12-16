@@ -19,7 +19,7 @@ def get_db_connection():
     conn = psycopg2.connect(host='database-2.cutddukdl6vf.us-east-1.rds.amazonaws.com',
                         database='portfolio',
                         user="aerielellis",
-                        password="password112233",
+                        password="password123",
                         port="5432")
     return conn
 
