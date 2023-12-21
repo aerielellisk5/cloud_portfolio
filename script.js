@@ -11,12 +11,4 @@ function increaseCount() {
     return project_one_like_count
 }
 
-// checkout the onload for the document
-
-
-function onloadcounter () {
-    counter = counter + 1
-    console.log(counter)
-    return counter
-}
 

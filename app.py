@@ -13,13 +13,13 @@ def get_db_connection():
     # conn = psycopg2.connect(host='db',
     #                     database='portfolio',
     #                     user="aerielellis",
-    #                     password="password123",
+    #                     password="password112233",
     #                     port="5432")
     
     conn = psycopg2.connect(host='database-2.cutddukdl6vf.us-east-1.rds.amazonaws.com',
                         database='portfolio',
                         user="aerielellis",
-                        password="password123",
+                        password="password112233",
                         port="5432")
     return conn
 
@@ -38,7 +38,16 @@ def index():
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html')
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('''SELECT counter FROM counter''')
+    data = cur.fetchall()
+    cur.close()
+    conn.close()
+    return render_template('project.html', data = data)
+    
+    
+    
 
 
 
