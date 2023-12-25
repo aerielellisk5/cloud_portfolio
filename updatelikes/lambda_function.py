@@ -29,6 +29,7 @@ def lambda_handler(event, context):
                 """
             )
             data = cur.fetchone()
+            # maybe want to check data.length or data.count to make sure that data exists. if its a 0, we will do an insert statement, but if its 1, then its an update statement
             count = data[0] + 1
 
             update_query = "UPDATE counter SET counter = %s WHERE id = 1;"
@@ -46,8 +47,7 @@ def lambda_handler(event, context):
                 "body": count,
                 "headers": {
                     "content-type": "application/json"
-                }
-                
+                }                
             }
             
             return response
