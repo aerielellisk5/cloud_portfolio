@@ -7,9 +7,9 @@ terraform {
       version = "~> 5.0"
     }
   }
-  # Comment this backend s3 part out IF starting from scratch
+  # # Comment this backend s3 part out IF starting from scratch
   backend "s3" {
-    bucket = "tf-cloud-portfolio-2"
+    bucket = "cloud-portfolio-2"
     key    = "terraform_create_s3_bucket/terraform.tfstate"
     region = "us-east-1"
     dynamodb_table = "terraform-remote-state-dynamo"
@@ -55,4 +55,16 @@ resource "aws_dynamodb_table" "terraform_locks" {
   }
 }
 
-# Create the S3 bucket that will hold the files for the website
+# Create the RDS instance 
+resource "aws_db_instance" "backup_pg_instance" {
+  allocated_storage    = 20
+  db_name              = var.my_db
+  engine               = var.db_engine
+  engine_version       = var.engine_version
+  instance_class       = var.db_ic 
+  username             = var.db_username
+  password             = var.db_password
+  # parameter_group_name = "default.mysql5.7" This is optional
+  # skip_final_snapshot  = true this is also optional
+}
+
